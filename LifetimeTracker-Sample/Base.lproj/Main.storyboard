@@ -22,14 +22,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-fd-ytI">
                                         <rect key="frame" x="0.0" y="0.0" width="123" height="30"/>
-                                        <state key="normal" title="正常なpush遷移"/>
+                                        <state key="normal" title="push遷移"/>
                                         <connections>
                                             <segue destination="pds-sf-VLE" kind="show" id="JCl-0e-O3f"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6U-hW-BBo">
                                         <rect key="frame" x="0.0" y="60" width="123" height="30"/>
-                                        <state key="normal" title="正常なmodal遷移"/>
+                                        <state key="normal" title="modal遷移"/>
                                         <connections>
                                             <segue destination="6e3-fK-Sgg" kind="presentation" id="vqY-JK-Fb8"/>
                                         </connections>
