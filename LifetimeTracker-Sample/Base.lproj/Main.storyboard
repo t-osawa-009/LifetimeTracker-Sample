@@ -17,36 +17,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-fd-ytI">
-                                <rect key="frame" x="132" y="164" width="111" height="30"/>
-                                <state key="normal" title="正常なpush遷移"/>
-                                <connections>
-                                    <segue destination="pds-sf-VLE" kind="show" id="JCl-0e-O3f"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRW-C6-GvX">
-                                <rect key="frame" x="126" y="224" width="123" height="30"/>
-                                <state key="normal" title="インスタンを追加"/>
-                                <connections>
-                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWH-Eu-STJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm6-2j-deu">
-                                <rect key="frame" x="126" y="284" width="123" height="30"/>
-                                <state key="normal" title="インスタンを破棄"/>
-                                <connections>
-                                    <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGT-gn-xBL"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wMd-bt-CBa">
+                                <rect key="frame" x="126" y="258.5" width="123" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-fd-ytI">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="30"/>
+                                        <state key="normal" title="正常なpush遷移"/>
+                                        <connections>
+                                            <segue destination="pds-sf-VLE" kind="show" id="JCl-0e-O3f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRW-C6-GvX">
+                                        <rect key="frame" x="0.0" y="60" width="123" height="30"/>
+                                        <state key="normal" title="インスタンを追加"/>
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWH-Eu-STJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm6-2j-deu">
+                                        <rect key="frame" x="0.0" y="120" width="123" height="30"/>
+                                        <state key="normal" title="インスタンを破棄"/>
+                                        <connections>
+                                            <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGT-gn-xBL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Vm6-2j-deu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CPU-Dt-dsp"/>
-                            <constraint firstItem="8yX-fd-ytI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ZJL-BQ-Wy4"/>
-                            <constraint firstItem="8yX-fd-ytI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h2m-DH-PDN"/>
-                            <constraint firstItem="VRW-C6-GvX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vtS-WW-BFY"/>
-                            <constraint firstItem="VRW-C6-GvX" firstAttribute="top" secondItem="8yX-fd-ytI" secondAttribute="bottom" constant="30" id="wpO-cP-0hC"/>
-                            <constraint firstItem="Vm6-2j-deu" firstAttribute="top" secondItem="VRW-C6-GvX" secondAttribute="bottom" constant="30" id="xqC-8b-GGd"/>
+                            <constraint firstItem="wMd-bt-CBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AyG-p4-KKl"/>
+                            <constraint firstItem="wMd-bt-CBa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iJo-Im-fLD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
