@@ -36,14 +36,14 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRW-C6-GvX">
                                         <rect key="frame" x="0.0" y="120" width="123" height="30"/>
-                                        <state key="normal" title="インスタンを追加"/>
+                                        <state key="normal" title="インスタンス追加"/>
                                         <connections>
                                             <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWH-Eu-STJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm6-2j-deu">
                                         <rect key="frame" x="0.0" y="180" width="123" height="30"/>
-                                        <state key="normal" title="インスタンを破棄"/>
+                                        <state key="normal" title="インスタンス破棄"/>
                                         <connections>
                                             <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGT-gn-xBL"/>
                                         </connections>
