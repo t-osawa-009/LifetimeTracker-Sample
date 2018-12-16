@@ -18,24 +18,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-fd-ytI">
-                                <rect key="frame" x="149" y="164" width="77" height="30"/>
-                                <state key="normal" title="正常な遷移"/>
+                                <rect key="frame" x="132" y="164" width="111" height="30"/>
+                                <state key="normal" title="正常なpush遷移"/>
                                 <connections>
                                     <segue destination="pds-sf-VLE" kind="show" id="JCl-0e-O3f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRW-C6-GvX">
-                                <rect key="frame" x="156" y="224" width="63" height="30"/>
-                                <state key="normal" title="leak 遷移"/>
+                                <rect key="frame" x="126" y="224" width="123" height="30"/>
+                                <state key="normal" title="インスタンを追加"/>
                                 <connections>
-                                    <action selector="leakButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3QF-FZ-LHN"/>
+                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWH-Eu-STJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm6-2j-deu">
-                                <rect key="frame" x="151" y="284" width="73" height="30"/>
-                                <state key="normal" title="deinit 遷移"/>
+                                <rect key="frame" x="126" y="284" width="123" height="30"/>
+                                <state key="normal" title="インスタンを破棄"/>
                                 <connections>
-                                    <action selector="deinitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7zE-9v-RAz"/>
+                                    <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGT-gn-xBL"/>
                                 </connections>
                             </button>
                         </subviews>

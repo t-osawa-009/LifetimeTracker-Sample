@@ -20,12 +20,12 @@ class ViewController: UIViewController {
        
     }
     
-    @IBAction func leakButtonTapped(_ sender: Any) {
+    @IBAction func addButtonTapped(_ sender: Any) {
         let vc = ViewController()
         viewControllers.append(vc)
     }
     
-    @IBAction func deinitButtonTapped(_ sender: Any) {
+    @IBAction func deleteButtonTapped(_ sender: Any) {
         guard !viewControllers.isEmpty else { return }
         viewControllers.removeLast()
     }
