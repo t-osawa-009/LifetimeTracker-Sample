@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wMd-bt-CBa">
-                                <rect key="frame" x="126" y="258.5" width="123" height="150"/>
+                                <rect key="frame" x="126" y="228.5" width="123" height="210"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-fd-ytI">
                                         <rect key="frame" x="0.0" y="0.0" width="123" height="30"/>
@@ -27,15 +27,22 @@
                                             <segue destination="pds-sf-VLE" kind="show" id="JCl-0e-O3f"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRW-C6-GvX">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6U-hW-BBo">
                                         <rect key="frame" x="0.0" y="60" width="123" height="30"/>
+                                        <state key="normal" title="正常なmodal遷移"/>
+                                        <connections>
+                                            <segue destination="6e3-fK-Sgg" kind="presentation" id="vqY-JK-Fb8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRW-C6-GvX">
+                                        <rect key="frame" x="0.0" y="120" width="123" height="30"/>
                                         <state key="normal" title="インスタンを追加"/>
                                         <connections>
                                             <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWH-Eu-STJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm6-2j-deu">
-                                        <rect key="frame" x="0.0" y="120" width="123" height="30"/>
+                                        <rect key="frame" x="0.0" y="180" width="123" height="30"/>
                                         <state key="normal" title="インスタンを破棄"/>
                                         <connections>
                                             <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGT-gn-xBL"/>
@@ -56,6 +63,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="eOc-WM-PaV">
+            <objects>
+                <viewController id="6e3-fK-Sgg" customClass="SecondViewController" customModule="LifetimeTracker_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kNU-7w-5lZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8h-cm-cCA">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="閉じる"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="6e3-fK-Sgg" eventType="touchUpInside" id="VZL-rh-tad"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v8h-cm-cCA" firstAttribute="centerX" secondItem="kNU-7w-5lZ" secondAttribute="centerX" id="88q-sK-9uE"/>
+                            <constraint firstItem="v8h-cm-cCA" firstAttribute="centerY" secondItem="kNU-7w-5lZ" secondAttribute="centerY" id="hA6-Sv-Pkn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H8k-MC-MRC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Yj-Kj-uM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="904"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ttj-JU-E0l">
